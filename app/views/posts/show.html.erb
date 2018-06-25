@@ -1,2 +1,7 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<h1><%= @post.title %></h1>
+<i>Created <%= time_ago_in_words(@post.created_at) %> ago</i>
+<p><%= @post.content %></p>
+
+<%= link_to "Back", posts_path %>
+<%= link_to "Edit", edit_post_path %>
+<%= link_to "Delete", post_path, method: :delete %>
