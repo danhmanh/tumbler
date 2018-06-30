@@ -1,10 +1,11 @@
-<h1>All Posts</h1>
+<h1><b>All Posts</b></h1>
 
-<p><%= link_to "Create new post", new_post_path %></p>
+<!--<p><%#= link_to "Create new post", new_post_path %></p>-->
 
 <% @posts.each do |post| %>
 
   <h3><%= link_to post.title, post_path(post.id) %></h3>
   <i><%= time_ago_in_words post.created_at %></i>
-  <p><%= truncate(post.content , length: 20) %></p>
+  <p><%= truncate(post.content , length: 50) %></p>
+  <hr>
 <% end %>

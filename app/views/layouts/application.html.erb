@@ -7,9 +7,45 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'general' %>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
+  <div class="row">
+
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+<!--      MAIN APP-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Tumbler</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="<% link_to posts_path %>"> New feeds <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Profile</a>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <div class="navbar-nav">
+            <%= link_to "Create new post", new_post_path, class: "nav-item nav-link" %>
+
+            <a class="nav-item nav-link" href="#">Log out</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <%= yield %>
+
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+
+  </div>
+
   </body>
 </html>
