@@ -32,13 +32,23 @@
 
         <div class="collapse navbar-collapse">
           <div class="navbar-nav">
-            <%= link_to "Create new post", new_post_path, class: "nav-item nav-link" %>
 
-            <a class="nav-item nav-link" href="#">Log out</a>
+            <% if user_signed_in? %>
+              <%= link_to "Create new post", new_post_path, class: "nav-item nav-link" %>
+              <%= link_to "Log out", destroy_user_session_path, class:  "nav-item nav-link" %>
+              <% else %>
+              <%= link_to "Login", new_user_session_path, class: "nav-item nav-link" %>
+              <%= link_to "Signup", new_user_registration_path, class: "nav-item nav-link" %>
+            <% end %>
           </div>
         </div>
       </nav>
+
+
       <div class="container-fluid">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+
         <%= yield %>
 
       </div>
