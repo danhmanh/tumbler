@@ -3,7 +3,7 @@
 
   <%= f.input :title %>
   <%= f.input :content %>
-
+  <%= f.hidden_field :user_id %>
   <%= f.button :submit, class: "btn-primary" %>
   <%= link_to "Back", posts_path, class: "btn btn-default" %>
 <% end %>

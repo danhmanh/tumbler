@@ -1,28 +1,39 @@
 <h1><b><%= @post.title %></b></h1>
+<h5>Author: <%= @post.user.email %></h5>
 <i>Created <%= time_ago_in_words(@post.created_at) %> ago</i>
-<br>
-<%= link_to "Back", posts_path %> |
-<%= link_to "Edit", edit_post_path %> |
-<%= link_to "Delete", post_path, method: :delete, data: {confirm: "Are you sure about that?"}  %>
+
+<% if current_user.eql? @post.user %>
+
+  <%= link_to "Back", posts_path %> |
+  <%= link_to "Edit", edit_post_path %> |
+  <%= link_to "Delete", post_path, method: :delete, data: {confirm: "Are you sure about that?"}  %>
+<% end %>
+
 <hr>
 <br>
 
 
 <p><%= @post.content %></p>
-
 <hr>
-<p><%= @post.comments.count %></p>
+
+
 <h3>Add a comments</h3>
 
-<% @post.comments.each do |c| %>
-  <p><%= c.content %></p>
-  <p><%= c.user.email %></p>
-<!--  <p><%#= c. %></p>-->
-  <hr>
-<% end %>
-
-<%= simple_form_for Comment.new do |f| %>
+<%= simple_form_for Comment.new, url: post_comments_path(@post) do |f| %>
   <%= f.input :content %>
   <%= f.hidden_field :post_id, value: @post.id %>
   <%= f.button :submit %>
 <% end %>
+
+<p><%= @post.comments.count %> comments</p>
+<% @post.comments.each do |c| %>
+  <p><b><%= c.user.email %></b> | <%= time_ago_in_words c.created_at %> ago</p>
+
+  <p><%= c.content %></p>
+
+  <% if current_user.eql? @post.user %>
+    <%= link_to "Delete", post_comment_path(c.id), method: :delete,  data: {confirm: "Are you sure about that?"} %>
+  <% end %>
+<% end %>
+
+

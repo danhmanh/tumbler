@@ -19,28 +19,41 @@
 
 <!--      MAIN APP-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Tumbler</a>
+        <a class="navbar-brand" href="<%= posts_path %>">Tumbler</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="<% link_to posts_path %>"> New feeds <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="<%= posts_path %>" > New feeds </a>
             <a class="nav-item nav-link" href="#">Profile</a>
           </div>
         </div>
 
+
         <div class="collapse navbar-collapse">
           <div class="navbar-nav">
-            <%= link_to "Create new post", new_post_path, class: "nav-item nav-link" %>
-            <%#= link_to "Login", new_user %>
-            <a class="nav-item nav-link" href="#">Log out</a>
+            <% if user_signed_in? %>
+              <p class="nav-item nav-link"><%= current_user.email %></p>
+              <%= link_to "Create new post", new_post_path, class: "nav-item nav-link" %>
+              <%= link_to "Logout", destroy_user_session_path, class: "nav-item nav-link", method: :delete, data: { confirm: "Are you sure?" } %>
+            <% else %>
+              <%= link_to "Login" , new_user_session_path, class: "nav-item nav-link" %>
+              <%= link_to "Sign up", new_user_registration_path, class: "nav-item nav-link" %>
+            <% end %>
           </div>
         </div>
       </nav>
       <div class="container-fluid">
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
+
+        <% unless notice.nil? %>
+          <p class="notice alert alert-success"><%= notice %></p>
+        <% end %>
+
+        <% unless alert.nil? %>
+          <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+
 
         <%= yield %>
 
