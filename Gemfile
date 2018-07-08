@@ -37,7 +37,8 @@ gem 'simple_form'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'devise'
-
+gem 'carrierwave'
+gem 'faker'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 

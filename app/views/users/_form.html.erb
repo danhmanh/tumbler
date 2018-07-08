@@ -1,6 +1,7 @@
 <%= simple_form_for @user do |f| %>
   <%= f.error_notification %>
   <%= f.input :name %>
+  <%= f.input :avatar, as: :file %>
   <%= f.input :bio %>
   <%= f.input :company %>
   <%= f.button :submit, class: "btn-primary" %>
