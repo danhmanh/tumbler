@@ -1,0 +1,24 @@
+<h1>Profile</h1>
+<div class="row">
+  <div class="col-md-4">
+    <% if @user.avatar.to_s.empty? %>
+      <img src="https://i.pinimg.com/236x/94/d0/31/94d0319c6ad9424b614d99ccd5c29b67.jpg" alt="<%= @user.email %>" class="img-responsive rounded" width="250" height="250">
+    <% else %>
+      <img src="<%= @user.avatar.to_s %>" alt="<%= @user.email %>" class="img-responsive rounded" width="250" height="250">
+    <% end %>
+    <p>Name: <%= @user.name.nil? ? "Unknown" : @user.name %></p>
+    <p><%= @user.email %></p>
+    <p>Bio: <%= @user.bio.nil? ? "Unknown" : @user.bio %></p>
+    <p>Company: <%= @user.company.nil? ?  "Unknown" : @user.company %></p>
+    <p>Joined <%= @user.created_at.strftime("%F") %></p>
+
+    <%= link_to "Update your profile", edit_user_path, class: "btn btn-primary" %>
+  </div>
+
+  <div class="col-md-8">
+    <% @user.posts.each do |post| %>
+      <h2><%= link_to post.title, post_path(post.id) %></h2>
+      <p><%= truncate post.content, length: 100 %></p>
+    <% end %>
+  </div>
+</div>

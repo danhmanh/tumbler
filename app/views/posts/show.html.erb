@@ -31,7 +31,7 @@
 
   <p><%= c.content %></p>
 
-  <% if current_user.eql? @post.user %>
+  <% if current_user.eql? c.user %>
     <%= link_to "Delete", post_comment_path(c.id), method: :delete,  data: {confirm: "Are you sure about that?"} %>
   <% end %>
 <% end %>
