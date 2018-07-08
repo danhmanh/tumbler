@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00fcc5a2-3a54-4a25-9040-6fd96abc3823" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/074c4473-d048-4d86-be30-43fd9938f336.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/074c4473-d048-4d86-be30-43fd9938f336.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Tumbler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tumbler.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -55,13 +58,6 @@
         <item name="development" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="posts: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="development" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
         <item name="users: table" type="ffe0bd85:SqliteImplModel$Table" />
       </path>
     </expand>
@@ -69,47 +65,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="posts_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+            <state relative-caret-position="88">
+              <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
+      <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20180708113019_add_avatar_to_users.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20180708113019_add_avatar_to_users.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/posts/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" selection-start-line="2" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -117,17 +95,35 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            <state relative-caret-position="63">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+            <state relative-caret-position="21">
+              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -135,26 +131,8 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20180707150225_add_name_to_users.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20180707150225_add_name_to_users.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="84">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -174,12 +152,10 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/general.css" />
         <option value="$PROJECT_DIR$/config/initializers/assets.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180701065332_create_comments.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180705143331_create_comments.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180705150259_drop_table_comment.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180705145948_create_comments.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/post.rb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
@@ -190,11 +166,18 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180707150225_add_name_to_users.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20180708111150_fix_image_column.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
       </list>
     </option>
   </component>
@@ -241,14 +224,34 @@
               <item name="Tumbler" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tumbler" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tumbler" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tumbler" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="uploaders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tumbler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tumbler" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tumbler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tumbler" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tumbler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tumbler" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="migrate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tumbler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tumbler" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -258,7 +261,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
-    <property name="SearchEverywhereHistoryKey" value="appli&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/views/layouts/application.html.erb&#10;show&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/views/posts/show.html.erb&#10;app&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/views/layouts/application.html.erb&#10;user_&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/controllers/users_controller.rb&#10;route&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/config/routes.rb&#10;user&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/user.rb&#10;_form&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/views/posts/_form.html.erb&#10;comment&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/comment.rb&#10;com&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/controllers/comments_controller.rb&#10;post_con&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/controllers/posts_controller.rb&#10;add&#9;null&#9;null&#10;us&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/user.rb&#10;pos&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/post.rb&#10;c&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/comment.rb&#10;create_comme&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/db/migrate/20180705145948_create_comments.rb&#10;schema&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/db/schema.rb&#10;init&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/config/initializers&#10;Comment&#9;FILE&#9;das://074c4473-d048-4d86-be30-43fd9938f336/schema/main/table/comments&#10;commcon&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/controllers/comments_controller.rb&#10;comm&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/comment.rb&#10;index&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/views/posts/index.html.erb&#10;post&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/post.rb&#10;applica.c&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/assets/stylesheets/application.css&#10;gemf&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/Gemfile" />
+    <property name="SearchEverywhereHistoryKey" value="see&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/db/seeds.rb&#10;gem&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/Gemfile&#10;user_con&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/controllers/users_controller.rb&#10;db&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/db&#10;appli&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/config/application.rb&#10;user&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/user.rb&#10;G&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/Gemfile&#10;show&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/views/posts/show.html.erb&#10;app&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/views/layouts/application.html.erb&#10;user_&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/controllers/users_controller.rb&#10;route&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/config/routes.rb&#10;_form&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/views/posts/_form.html.erb&#10;comment&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/comment.rb&#10;com&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/controllers/comments_controller.rb&#10;post_con&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/controllers/posts_controller.rb&#10;add&#9;null&#9;null&#10;us&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/user.rb&#10;pos&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/post.rb&#10;c&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/comment.rb&#10;create_comme&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/db/migrate/20180705145948_create_comments.rb&#10;schema&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/db/schema.rb&#10;init&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/config/initializers&#10;Comment&#9;FILE&#9;das://074c4473-d048-4d86-be30-43fd9938f336/schema/main/table/comments&#10;commcon&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/controllers/comments_controller.rb&#10;comm&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/comment.rb&#10;index&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/views/posts/index.html.erb&#10;post&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/models/post.rb&#10;applica.c&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/app/assets/stylesheets/application.css&#10;gemf&#9;FILE&#9;file:///home/danhmanh/Documents/Rails/Tumbler/Gemfile" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Ruby Training" />
@@ -409,12 +412,12 @@
       <workItem from="1530925051975" duration="553000" />
       <workItem from="1530968962165" duration="6700000" />
       <workItem from="1531038597360" duration="103000" />
-      <workItem from="1531038722836" duration="832000" />
+      <workItem from="1531038722836" duration="9174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42842000" />
+    <option name="totallyTimeSpent" value="51184000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,18 +429,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="-11" width="1309" height="780" extended-state="6" />
+    <frame x="58" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49583334" visible="true" weight="0.2997621" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49961028" weight="0.3287037" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003897" side_tool="true" weight="0.3287037" />
-      <window_info anchor="right" id="Database" order="3" weight="0.0" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49961028" weight="0.32253087" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" x="280" y="217" width="662" height="339" id="Terminal" order="9" sideWeight="0.49962264" visible="true" weight="0.3402556" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49583334" weight="0.32908365" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32988048" />
       <window_info id="Structure" order="1" sideWeight="0.50416666" side_tool="true" weight="0.24981132" />
-      <window_info anchor="bottom" x="280" y="217" width="662" height="339" id="Terminal" order="9" sideWeight="0.49962264" visible="true" weight="0.3035144" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -463,16 +467,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180630155630_create_comments.rb" />
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180701062716_add_ref.rb" />
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180701041215_create_comments.rb" />
-    <entry file="file://$PROJECT_DIR$/app/models/post.rb" />
-    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb" />
-    <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb" />
-    <entry file="file://$PROJECT_DIR$/app/views/posts/edit.html.erb" />
-    <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb" />
-    <entry file="file://$PROJECT_DIR$/config/routes.rb" />
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -527,13 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -576,25 +563,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20180706064735_add_user_to_posts.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://074c4473-d048-4d86-be30-43fd9938f336/schema/main/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -619,20 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -654,31 +613,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="61" />
+        <state relative-caret-position="147">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootsnap-1.3.0/lib/bootsnap/load_path_cache/core_ext/active_support.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="977">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180708111150_fix_image_column.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180708101400_add_image_to_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dataSources/074c4473-d048-4d86-be30-43fd9938f336.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        <state relative-caret-position="84">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180708113019_add_avatar_to_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://074c4473-d048-4d86-be30-43fd9938f336/schema/main/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        <state relative-caret-position="63">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        <state relative-caret-position="21">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

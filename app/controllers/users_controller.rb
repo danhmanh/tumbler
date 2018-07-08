@@ -4,10 +4,6 @@ class UsersController < ApplicationController
     @user = current_user
   end
 
-  def index
-    @users = User.all
-  end
-
   def edit
     @user = current_user
   end
@@ -21,7 +17,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :bio, :company)
+    params.require(:user).permit(:name, :bio, :company, :avatar)
   end
 
 end
