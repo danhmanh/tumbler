@@ -1,0 +1,9 @@
+<%= simple_form_for @user do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name %>
+  <%= f.input :bio %>
+  <%= f.input :company %>
+  <%= f.button :submit, class: "btn-primary" %>
+  <%= link_to "Back", user_path, class: "btn btn-default" %>
+<% end %>
+
