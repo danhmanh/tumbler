@@ -242,17 +242,29 @@
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="61" parent="12" name="index_users_on_email">
+    <column id="61" parent="12" name="name">
+      <Position>14</Position>
+      <DataType>varchar|0s</DataType>
+    </column>
+    <column id="62" parent="12" name="bio">
+      <Position>15</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="63" parent="12" name="company">
+      <Position>16</Position>
+      <DataType>varchar|0s</DataType>
+    </column>
+    <index id="64" parent="12" name="index_users_on_email">
       <ColNames>email</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <index id="62" parent="12" name="index_users_on_reset_password_token">
+    <index id="65" parent="12" name="index_users_on_reset_password_token">
       <ColNames>reset_password_token</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="63" parent="12">
+    <key id="66" parent="12">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
