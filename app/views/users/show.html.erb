@@ -16,9 +16,10 @@
   </div>
 
   <div class="col-md-8">
-    <% @user.posts.each do |post| %>
+    <% @posts.each do |post| %>
       <h2><%= link_to post.title, post_path(post.id) %></h2>
       <p><%= truncate post.content, length: 100 %></p>
     <% end %>
+    <%= paginate @posts, theme: 'twitter-bootstrap-4' %>
   </div>
 </div>

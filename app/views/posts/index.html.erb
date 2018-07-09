@@ -9,3 +9,5 @@
   <p><%= truncate(post.content , length: 50) %></p>
   <hr>
 <% end %>
+
+<%= paginate @posts, theme: 'twitter-bootstrap-4' %>
