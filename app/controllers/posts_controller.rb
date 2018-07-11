@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   def index
-    @posts = Post.order(:created_at).page(params[:page]).per(4)
+    @posts = Post.order('created_at DESC').page(params[:page]).per(4)
   end
 
   def new
@@ -38,6 +38,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @comments = @post.comments.order('created_at DESC').page(params[:page]).per(4)
   end
 
   private

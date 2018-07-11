@@ -16,6 +16,11 @@
   </div>
 
   <div class="col-md-8">
+    <% if @posts.count.zero? %>
+      <p>You dont have any posts. Why not create one?</p>
+    <% end %>
+    <%= link_to "Create new post", new_post_path, class: "btn btn-primary" %>
+    <hr>
     <% @posts.each do |post| %>
       <h2><%= link_to post.title, post_path(post.id) %></h2>
       <p><%= truncate post.content, length: 100 %></p>
